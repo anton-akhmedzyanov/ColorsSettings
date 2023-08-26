@@ -105,6 +105,10 @@ final class SettingColorViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+    
+    @objc private func didTapDone() {
+        view.endEditing(true)
+    }
 }
 
 extension SettingColorViewController: UITextFieldDelegate {
@@ -112,7 +116,7 @@ extension SettingColorViewController: UITextFieldDelegate {
         guard let value = textField.text else { return }
         guard let newValue = Float(value) else { return }
         
-        if newValue < 1 {
+        if newValue < 1.01 {
             
             switch textField {
             case redTF:
@@ -142,8 +146,25 @@ extension SettingColorViewController: UITextFieldDelegate {
             default:
                 break
             }
+            
+        }
+        }
+        func textFieldDidBeginEditing(_ textField: UITextField) {
+            let keyboardToolbar = UIToolbar()
+            keyboardToolbar.sizeToFit()
+            textField.inputAccessoryView = keyboardToolbar
+            
+            let doneButton = UIBarButtonItem(barButtonSystemItem: .done,
+                                             target: self,
+                                             action: #selector(didTapDone)
+            )
+            
+            let flexButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+                                             target: nil,
+                                             action: nil)
+            
+            keyboardToolbar.items = [flexButton, doneButton]
+            
         }
     }
-}
-
 
