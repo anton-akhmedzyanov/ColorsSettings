@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		3AF640A52A96850C00B096BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF640A42A96850C00B096BA /* AppDelegate.swift */; };
 		3AF640A72A96850C00B096BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF640A62A96850C00B096BA /* SceneDelegate.swift */; };
-		3AF640A92A96850C00B096BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF640A82A96850C00B096BA /* ViewController.swift */; };
+		3AF640A92A96850C00B096BA /* SettingColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF640A82A96850C00B096BA /* SettingColorViewController.swift */; };
 		3AF640AC2A96850C00B096BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF640AA2A96850C00B096BA /* Main.storyboard */; };
 		3AF640AF2A96850C00B096BA /* ColorsSettings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AF640AD2A96850C00B096BA /* ColorsSettings.xcdatamodeld */; };
 		3AF640B12A96850D00B096BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF640B02A96850D00B096BA /* Assets.xcassets */; };
 		3AF640B42A96850D00B096BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF640B22A96850D00B096BA /* LaunchScreen.storyboard */; };
+		3AF640BC2A968C1700B096BA /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF640BB2A968C1700B096BA /* ColorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3AF640A12A96850C00B096BA /* ColorsSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorsSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF640A42A96850C00B096BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF640A62A96850C00B096BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3AF640A82A96850C00B096BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3AF640A82A96850C00B096BA /* SettingColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingColorViewController.swift; sourceTree = "<group>"; };
 		3AF640AB2A96850C00B096BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AF640AE2A96850C00B096BA /* ColorsSettings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ColorsSettings.xcdatamodel; sourceTree = "<group>"; };
 		3AF640B02A96850D00B096BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AF640B32A96850D00B096BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AF640B52A96850D00B096BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AF640BB2A968C1700B096BA /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 			children = (
 				3AF640A42A96850C00B096BA /* AppDelegate.swift */,
 				3AF640A62A96850C00B096BA /* SceneDelegate.swift */,
-				3AF640A82A96850C00B096BA /* ViewController.swift */,
+				3AF640A82A96850C00B096BA /* SettingColorViewController.swift */,
+				3AF640BB2A968C1700B096BA /* ColorView.swift */,
 				3AF640AA2A96850C00B096BA /* Main.storyboard */,
 				3AF640B02A96850D00B096BA /* Assets.xcassets */,
 				3AF640B22A96850D00B096BA /* LaunchScreen.storyboard */,
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF640A92A96850C00B096BA /* ViewController.swift in Sources */,
+				3AF640A92A96850C00B096BA /* SettingColorViewController.swift in Sources */,
 				3AF640A52A96850C00B096BA /* AppDelegate.swift in Sources */,
 				3AF640AF2A96850C00B096BA /* ColorsSettings.xcdatamodeld in Sources */,
 				3AF640A72A96850C00B096BA /* SceneDelegate.swift in Sources */,
+				3AF640BC2A968C1700B096BA /* ColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +301,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +309,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AntonAkhmedzyanov.ColorsSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,8 +331,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +339,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AntonAkhmedzyanov.ColorsSettings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
